@@ -1,0 +1,83 @@
+div.pullprevious, div.pullprevious div.msgwrap {
+  background-color: #e1e1e1 !important;
+}
+
+div.pullprevious span.arrow {
+  width: 32px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  background-image: url('../images/blackArrow.png');
+  background-repeat: no-repeat;
+  margin: 10px 0 0 25px;
+}
+
+div.loadingspacer span.loading {
+  width: 32px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  background-image: url('../images/loader.gif');
+  background-repeat: no-repeat;
+  background-position: 0 7px;
+}
+
+div.pullprevious span.msg, div.loadingspacer span.msg {
+  width: 80%;
+  text-align: center;
+  font-size: 0.9em;
+  position: absolute;
+  top: 12px;
+  left: 40px;
+  margin: 5px 0 5px 40px; 
+  font-weight: bold;
+}
+
+div.pullprevious span.lastupdate {
+  width: 80%;
+  text-align: center;
+  font-size: 0.7em;
+  position: absolute;
+  top: 25px;
+  left: 40px;
+  margin: 15px 0 5px 40px;
+}
+
+div.pullnext, div.pullnext div.msgwrap {
+  background-color: #e1e1e1 !important;
+}
+
+div.pullnext span.arrow {
+  width: 32px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  background-image: url('../images/blackArrow.png');
+  background-repeat: no-repeat;
+  margin: 10px 0 0 25px;
+  -webkit-transform: rotate(180deg);
+}
+
+div.pullnext span.msg, div.loadingspacer span.msg {
+  width: 80%;
+  text-align: center;
+  font-size: 0.9em;
+  position: absolute;
+  top: 12px;
+  left: 40px;
+  margin: 5px 0 5px 40px; 
+  font-weight: bold;
+}
+
+div.pullnext span.lastupdate {
+  width: 80%;
+  text-align: center;
+  font-size: 0.7em;
+  position: absolute;
+  top: 25px;
+  left: 40px;
+  margin: 15px 0 5px 40px;
+}
