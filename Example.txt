@@ -1,3 +1,7 @@
+/*****************************************
+ Example Use:
+*****************************************/
+
 plugins: [new mobile.plugins.ListPullPager({
 		previousFn: function(cb,scope){
 		    mobile.commissions.store.previousPage();
