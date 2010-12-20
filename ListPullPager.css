@@ -8,7 +8,7 @@ div.pullprevious span.arrow {
   position: absolute;
   top: 0;
   left: 10px;
-  background-image: url('../images/blackArrow.png');
+  background-image: url('../ListPullPager/WorkingExample/blackArrow.png');
   background-repeat: no-repeat;
   margin: 10px 0 0 25px;
 }
@@ -19,7 +19,7 @@ div.loadingspacer span.loading {
   position: absolute;
   top: 0;
   left: 10px;
-  background-image: url('../images/loader.gif');
+  background-image: url('../ListPullPager/WorkingExample/loader.gif');
   background-repeat: no-repeat;
   background-position: 0 7px;
 }
@@ -55,7 +55,7 @@ div.pullnext span.arrow {
   position: absolute;
   top: 0;
   left: 10px;
-  background-image: url('../images/blackArrow.png');
+  background-image: url('../ListPullPager/WorkingExample/blackArrow.png');
   background-repeat: no-repeat;
   margin: 10px 0 0 25px;
   -webkit-transform: rotate(180deg);
