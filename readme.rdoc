@@ -1,0 +1,2 @@
+ListPullPager is a modification or VinylFox's Ext.ux.touch.ListPullRefresh for Sencha Touch. It adds a pull and release tab for paging to both ends of the list.
+Have a look at the WorkingExample or Example.txt to see how to use it.
