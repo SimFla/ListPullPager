@@ -41,6 +41,11 @@ mobile.plugins.ListPullPager = Ext.extend(Ext.util.Observable, {
   // private
   init: function(cmp){
     this.cmp = cmp;
+
+    //set these flags to true if they are left undefined in the config
+    this.setPreviousEnabled(this.previousEnabled);
+    this.setNextEnabled(this.nextEnabled);
+    
     this.lastUpdate = new Date();
     cmp.loadingText = undefined;
     cmp.on('render', this.initPullHandler, this);
@@ -78,18 +83,27 @@ mobile.plugins.ListPullPager = Ext.extend(Ext.util.Observable, {
     
     this.cmp.scroller.on('offsetchange', this.handleOffsettChange, this);
   },
+
+  setPreviousEnabled: function(enabled) {
+    if (enabled === undefined) enabled = true;
+    this.previousEnabled = !!enabled;
+  },
+  setNextEnabled: function(enabled) {
+    if (enabled === undefined) enabled = true;
+    this.nextEnabled = !!enabled;
+  },
   
   handleOffsettChange: function(scroller, offset) {
     if (scroller.direction === 'vertical' && !this.loading){
       
       var heightOfList = scroller.size.height - scroller.containerBox.height;
       
-      if (offset.y > 0){
+      if (offset.y > 0 && this.previousEnabled){
         //console.log('up');
         this.handlePrevious(scroller, offset, heightOfList);
       }
       
-      if (offset.y < (heightOfList * -1)) {
+      if (offset.y < (heightOfList * -1) && this.nextEnabled) {
         //console.log('down');
         this.handleNext(scroller, offset, heightOfList);
       }
